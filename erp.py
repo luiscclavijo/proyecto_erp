@@ -23,8 +23,10 @@ st.sidebar.title("SOMOS TENTACIÓN")
 # Variables de autenticación
 USER = "luiscclavijo" 
 USER = "marlyycalderon"
+USER = "invitados"
 PASSWORD = "2200Luis" 
-PASSWORD = "2200Marly"
+PASSWORD = "2200Marly" 
+PASSWORD = "2200Invitados"
 
 # Inicialización de variables globales
 if "auth" not in st.session_state:
