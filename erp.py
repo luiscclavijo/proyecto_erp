@@ -21,8 +21,8 @@ st.write("Bienvenido al sistema ERP para la gestión de clientes, inventarios, f
 st.sidebar.title("SOMOS TENTACIÓN")
 
 # Variables de autenticación
-USER = "luiscclavijo"
-PASSWORD = "2200Luis"
+USER = "luiscclavijo" "marlyycalderon"
+PASSWORD = "2200Luis" "2200Marly"
 
 # Inicialización de variables globales
 if "auth" not in st.session_state:
