@@ -238,7 +238,7 @@ def gestion_facturas():
     st.subheader("Resumen de Factura")
     st.table(pd.DataFrame(productos_detalle))
     st.write(f"Subtotal: ${total:,.2f}")
-    st.write(f"IVA (16%): ${iva:,.2f}")
+    st.write(f"IVA (19%): ${iva:,.2f}")
     st.write(f"Total: ${total_con_iva:,.2f}")
     
     # Confirmación y registro de factura
