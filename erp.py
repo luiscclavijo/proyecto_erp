@@ -291,11 +291,6 @@ def gestion_reportes():
 import plotly.express as px
 
 def analisis_ventas():
-    import streamlit as st
-import pandas as pd
-import plotly.express as px
-
-def analisis_ventas():
     st.header("Análisis de Ventas")
     
     # Verificar si hay datos en las facturas
@@ -308,7 +303,6 @@ def analisis_ventas():
     for _, fila in st.session_state["facturas"].iterrows():
         for producto in fila["Productos"]:
             productos_desglosados.append({
-                "ClienteID": fila["ClienteID"],
                 "Producto": producto["Producto"],
                 "Cantidad": producto["Cantidad"],
                 "Subtotal": producto["Subtotal"],
@@ -358,14 +352,6 @@ def analisis_ventas():
         labels={"Subtotal": "Ingresos ($)", "Fecha": "Fecha"}
     )
     st.plotly_chart(fig3, use_container_width=True)
-
-    # Análisis de productos vendidos a cada cliente
-    st.subheader("Productos Vendidos a Cada Cliente")
-    clientes = df_productos.groupby("ClienteID")["Producto"].apply(list).reset_index()
-    clientes["Producto"] = clientes["Producto"].apply(lambda x: ", ".join(set(x)))  # Combinar productos únicos por cliente
-    st.dataframe(clientes)
-
-    st.success("Análisis completado correctamente.")
 
     st.success("Gráficos interactivos generados correctamente.")
 
