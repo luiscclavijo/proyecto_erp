@@ -15,7 +15,7 @@ st.set_page_config(page_title="Módulos del ERP", layout="wide",page_icon=logo_p
 st.image(logo_path, width=200)  # Puedes ajustar el tamaño cambiando el valor de 'width'
 
 # Agregar un título o contenido a la aplicación
-st.title("Sistema ERP")
+st.title("Sistema para SOMOS TENTACIÓN")
 st.write("Bienvenido al sistema ERP para la gestión de clientes, inventarios, facturación, reportes y análisis de ventas.")
 
 st.sidebar.title("SOMOS TENTACIÓN")
